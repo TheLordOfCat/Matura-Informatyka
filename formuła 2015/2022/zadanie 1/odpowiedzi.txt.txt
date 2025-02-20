@@ -1,0 +1,22 @@
+1.1
+
+1
+4
+0
+2
+3
+
+1.2
+dla I = 1, 2, …, n:
+     B[i] <- 0
+
+ans = 0
+dla I = 1, 2, …,n:
+    jeśli A[i] <= n:
+	B[A[i]] <- 1
+
+dla I = 1, 2, …, n:
+     jeśli B[i] == 0:
+	ans <- ans+1
+
+wypisz ans

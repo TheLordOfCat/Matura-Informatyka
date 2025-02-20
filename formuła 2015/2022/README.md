@@ -1,0 +1,3 @@
+Arkusz 1: https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2022/Informatyka/poziom_rozszerzony/EINP-R1-100-2205.pdf
+Arkusz 2: https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2022/Informatyka/poziom_rozszerzony/EINP-R2-100-2205.pdf
+Rozwiąznie: https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2022/Zasady_oceniania/EINP-R1_R2-100-2205-zasady.pdf
