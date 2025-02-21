@@ -1,0 +1,14 @@
+Zadanie 5.1
+Magazyn	
+Gniezno	152
+Malbork	183
+Ogrodzieniec	222
+Przemysl	198
+
+Zadanie 5.2
+8 dni
+07/10/2021
+14/10/2021
+
+Zadanie 5.3
+
