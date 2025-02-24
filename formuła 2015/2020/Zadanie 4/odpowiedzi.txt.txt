@@ -1,0 +1,20 @@
+1.1
+PRAWDA
+4
+FAŁSZ
+
+1.2
+funkcja czy_k_podobne(n,A,B,k):
+
+for I = 1,...,k:
+    jeśli A[i] != B[n-k+i]:
+	wynik FAłSZ
+	Zakończ działanie programu
+
+for I = 1,...,n-k+1:
+    jeśli A[k+i] != B[i]:
+	wynik FAŁSZ
+	Zakończ działanie programu
+
+wynik PRAWDA
+Zakończ działanie programu
