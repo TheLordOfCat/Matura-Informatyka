@@ -1,0 +1,32 @@
+k = 10
+S = "NKI_ATE_USGACYOKZZ_YYSJTCWEKI_SAEMTRLE_P"
+n = len(S)
+
+global l
+l = int(n/k)
+
+table = []
+for i in range(0,k):
+    temp = []
+    for j in range(0, l):
+        temp.append("0")
+    table.append(temp)
+
+
+for i in range(0, k):
+    ind = i*l
+    for j in range(0, l):
+        table[i][j] = S[ind+j]
+
+print(table)
+
+T = ""
+for i in range(0,l):
+    if i%2 == 0:
+        for j in range(0,k):
+            T = T + table[j][i]
+    else:
+        for j in range(k-1,-1, -1):
+            T = T + table[j][i]
+
+print(T)
