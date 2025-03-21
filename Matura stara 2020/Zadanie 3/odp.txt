@@ -1,0 +1,17 @@
+3.1
+FPFP
+
+3.2
+FFFP
+
+3.3
+PPFP
+
+3.4
+FFPP
+
+3.5
+FPFF
+
+3.6
+PPPF

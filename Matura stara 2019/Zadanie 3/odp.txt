@@ -1,10 +1,11 @@
 3.1
-PFPP
+PPFF
 
 3.2
-
+PFPP
 
 3.3
-
+FPFP
 
 3.4
+PFFP
