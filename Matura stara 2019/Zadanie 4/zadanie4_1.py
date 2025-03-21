@@ -1,29 +1,28 @@
-f = open("przyklad.txt" , "r")
-data = f.read().split()
+f = open("dzialki.txt" , "r")
+data = f.read().split("\n")
 
-primesLen = 101
-primes = []
-marked = [False]*primesLen
-for i in range(2, primesLen):
-    if marked[i] == False:
-        for j in range(2*i, primesLen, i):
-            marked[j] = True
+ans = 0
+def procesPlane(plane):
+    global ans
+    totalSize = 0
+    grassSize = 0
+    for i in range(0, len(plane)):
+        for j in range(0, len(plane[i])):
+            totalSize += 1
+            if plane[i][j] == "*":
+                grassSize += 1
 
-for i in range(2, primesLen):
-    if marked[i] == False:
-        primes.append(i)
+    ratio = grassSize/totalSize
+    if ratio >= 0.7:
+        ans += 1
 
-for i in range(0, len(data), 2):
-    nums = []
-    if int(data[i])%2 != 0:
-        continue
-    for j in range(0, len(primes)):
-        for o in range(j, len(primes)):
-            if primes[j] + primes[o] == int(data[i]):
-                nums.append(primes[j])
-                nums.append(primes[o])
-            if len(nums) == 2:
-                break
-        if len(nums) == 2:
-            break
-    print(data[i] + " " + str(nums[0]) + " " + str(nums[1]))
+plane = []
+for i in range(0, len(data)):
+    if data[i] != "":
+        plane.append(data[i])
+    else:
+        procesPlane(plane)
+        plane.clear()
+
+
+print(ans)

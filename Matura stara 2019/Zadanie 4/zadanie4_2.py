@@ -1,33 +1,38 @@
-f = open("pary.txt" , "r")
-data = f.read().split()
+f = open("przyklad.txt" , "r")
+data = f.read().split("\n")
 
-ans = []
-ansCount = []
+def procesPlane(plane1, plane2):
+    ok = True
 
-for i in range(0, len(data), 2):
-    s = data[i+1]
+    for i in range(0, len(plane1)):
+        for j in range(0, len(plane1[i])):
 
-    bestL = ""
-    curL = ""
-    for j in range(0, len(s)):
-        if len(curL) == 0:
-            curL = curL + s[j]
-        else:
-            if curL[0] == s[j]:
-                curL = curL + s[j]
-            else:
-                if len(bestL) < len(curL):
-                    bestL = curL
-                curL = ""
-                curL = curL + s[j]
+            for o in range(0, len(plane2)):
+                for k in range(len(plane2[o])-1, -1, -1):
+                    if plane1[i][j] != plane[o][k]:
+                        ok = False
+                        break
+                if not ok:
+                    break
 
-    if len(bestL) < len(curL):
-        bestL = curL
-        curL = ""
+            if not ok:
+                break
+        if not ok:
+            break
+    
+    return ok
 
-    ans.append(bestL)
-    ansCount.append(len(bestL))
+plane = []
+planeList = []
+for i in range(0, len(data)):
+    if data[i] != "":
+        plane.append(data[i])
+    else:
+        planeList.append(plane)
+        plane.clear()
 
-for i in range(0, len(ans)):
-    print(ans[i], end = " ")
-    print(ansCount[i])
+for i in range(0, len(planeList)):
+    for j in range(i, len(planeList)):
+        if procesPlane(planeList[i], planeList[j]):
+            print(str(i+1) + " " + str(j+1))
+
