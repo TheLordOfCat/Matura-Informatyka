@@ -1,0 +1,11 @@
+2.1
+TAK
+NIE
+TAK
+NIE
+TAK
+
+2.2
+
+
+
