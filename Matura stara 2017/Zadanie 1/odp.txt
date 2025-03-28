@@ -1,0 +1,16 @@
+1.1
+1 0 2 0 1 0 0 0 0 1
+0 0 0 0 5
+4 3 3 0
+
+1.2
+r = 0
+for j in range(1, T[i]):
+    r = r + liczba_wystapien[j]
+
+1.3
+2, 5, 3
+3, 3, 2, 2
+1, 2, 2, 2, 3
+
+w - liczba wystąpień liczb podzielnych przez k

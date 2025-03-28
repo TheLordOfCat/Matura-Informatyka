@@ -1,0 +1,12 @@
+num = []
+level = 8
+for i in range(1,level+1):
+    temp = (level+1-i)*(i)
+    num.append(temp)
+print(num)
+
+sum = 0
+for i in num:
+    sum += i
+
+print(sum)
